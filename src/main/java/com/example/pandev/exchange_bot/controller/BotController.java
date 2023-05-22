@@ -2,6 +2,8 @@ package com.example.pandev.exchange_bot.controller;
 
 
 
+import com.example.pandev.exchange_bot.configuration.ExchangeRatesBotConfig;
+import com.example.pandev.exchange_bot.loger.FormLogInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import pan.dev.configuration.ExchangeRatesBotConfig;
-import pan.dev.loger.FormLogInfo;
+
 
 /**
  * Контроллер для бота в телеге
