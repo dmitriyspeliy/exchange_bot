@@ -7,6 +7,7 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.updates.SetWebhook;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -23,8 +24,11 @@ import org.telegram.telegrambots.starter.SpringWebhookBot;
 public class ExchangeRatesBotConfig extends SpringWebhookBot {
 
 
+    @Value(value = "${telegram.bot.webHookPath}")
     String webHookPath;
+    @Value(value = "${telegram.bot.userName}")
     String botUserName;
+    @Value(value = "${telegram.bot.token}")
     String botToken;
 
     @Autowired

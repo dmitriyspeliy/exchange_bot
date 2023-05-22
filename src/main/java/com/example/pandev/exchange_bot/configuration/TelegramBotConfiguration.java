@@ -1,6 +1,7 @@
 package com.example.pandev.exchange_bot.configuration;
 
 
+import com.example.pandev.exchange_bot.util.ConfigMenu;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
@@ -8,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.telegram.telegrambots.meta.api.methods.updates.SetWebhook;
-import pan.dev.util.ConfigMenu;
+
 
 
 /**

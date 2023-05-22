@@ -2,10 +2,7 @@ package com.example.pandev.exchange_bot.mainHandler;
 
 import com.example.pandev.exchange_bot.entity.Chat;
 import com.example.pandev.exchange_bot.repository.ChatRepository;
-import com.example.pandev.exchange_bot.util.CheckAndSetStatus;
-import com.example.pandev.exchange_bot.util.ConfigKeyBoard;
-import com.example.pandev.exchange_bot.util.FormReplyMessages;
-import com.example.pandev.exchange_bot.util.SaveMessages;
+import com.example.pandev.exchange_bot.util.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -67,7 +64,7 @@ public class TextHandler {
                     case "convertTenge":
                         sendMessage = new SendMessage(baseInfo.getChatId(), exchangeHandler.getConvertRub(amount));
                         break;
-                    case "convertRub":
+                    case "convertRUB":
                         sendMessage = new SendMessage(baseInfo.getChatId(), exchangeHandler.getConvertKZT(amount));
                         break;
                 }

@@ -19,7 +19,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @RestController
 @Slf4j
 public class BotController {
-    final ExchangeRatesBotConfig exchangeRatesBotConfig;
+    private final ExchangeRatesBotConfig exchangeRatesBotConfig;
 
     public BotController(ExchangeRatesBotConfig exchangeRatesBotConfig) {
         this.exchangeRatesBotConfig = exchangeRatesBotConfig;
