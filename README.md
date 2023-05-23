@@ -10,10 +10,13 @@
 https://ngrok.com/docs/getting-started/
 либо через docker 
 https://ngrok.com/docs/using-ngrok-with/docker/
+
 2.APILAYER_KEY - ключ апи для перевода валюты
  https://dev.vk.com/api/access-token/getting-started
+ 
 3. VK_TOKEN - ключ апи для перевода аудио в текст
 https://dev.vk.com/api/access-token/getting-started
+
 - Запускаем Docker
 - В корне проекта есть файл docker-compose.yaml ( в нем запускается 2 контейнера с базой данных и jdk, порты 5432 и 8080 ). 
 Пароли, логины и хосты можно поменять в самом файле.
